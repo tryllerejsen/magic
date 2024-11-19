@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Dette sikrer at gradienten dekker hele siden */
+} /* Sørg for at body og html fyller hele høyden */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Dette sikrer at gradienten dekker hele siden */
+}
+
+/* Bakgrunnsgradient */
+body {
+  background: linear-gradient(to bottom, #2954ca, #002489); /* Gradient: lys til mørk */
+  background-attachment: fixed; /* Fikser gradienten slik at den ikke ruller */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Header, main, og footer-styling */
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+header {
+  background: transparent; /* Gjør header bakgrunn transparent slik at gradienten vises */
+}
+
+main {
+  min-height: calc(100vh - 160px); /* Sørg for at main tar opp plassen mellom header og footer */
+  text-align: left; /* Innhold justert til venstre */
+}
+
+footer {
+  background: transparent; /* Footer bakgrunn forblir transparent */
+  text-align: center;
+}
