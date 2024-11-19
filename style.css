@@ -49,3 +49,56 @@ h2 {
 p {
   color: #f9efc7;
 }
+/* Karusell styling */
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%; /* Viser 3 bilder samtidig */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 450px;
+  height: 450px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(254, 26, 26, 0);
+  color: rgb(34, 0, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
